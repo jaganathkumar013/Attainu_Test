@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            function canNest(arr1,arr2){
+            for(let i=0;i<arr2.length-1;i++){
+                let temp=arr2[i];
+                for(let j=0;j<arr1.length-1;j++){
+                    if(temp===arr1[j]){  
+                                             
+                        return false;
+                    }
+                }
+            }return true;
+            }
+            let a=canNest([9,9,8],[9,8]);
+            console.log(a);
+
+        </script>
+    </body>
+</html>
